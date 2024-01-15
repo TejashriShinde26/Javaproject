@@ -1,0 +1,25 @@
+package play;
+import java.util.Scanner;
+	
+
+class PLAYER {
+	String name;
+	float age;
+	int jersey_no;
+	Scanner sc=new Scanner(System.in);
+	void accept(){
+		System.out.println("Enter Name of  player : ");
+		name=sc.next();
+		System.out.println("Enter age of player :");
+		age=sc.nextFloat();
+		System.out.println("Enter jersey no. of player");
+		jersey_no=sc.nextInt();
+	}
+	void display(){
+		System.out.println("Name of player is "+name);
+		System.out.println("Age of player is "+age);
+		System.out.println("Jersey no of player is "+jersey_no);
+	}
+	
+
+}

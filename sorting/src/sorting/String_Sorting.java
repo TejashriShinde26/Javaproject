@@ -1,0 +1,40 @@
+package sorting;
+
+class Sorting
+{
+	static void sort(String arr[])
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=i+1;j<arr.length;j++)
+			{
+				if(arr[i].compareToIgnoreCase(arr[j])>0)
+				{
+					String temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		}
+	}
+}
+
+public class String_Sorting 
+{
+	public static void main(String args[])
+	{
+		String a[]={"teju","rani","kajal","pari"};
+		
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+		System.out.println(" ");
+		Sorting.sort(a);
+		
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+	}
+}
